@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For students · StudyBridge</title>
+<meta name="description" content="Get exam-ready, step by step: a plan for the weeks you have, short lessons, practice papers in the real format and timed mocks with a grade, with hints and worked solutions. IGCSE, A-Level and IB.">
+<meta name="theme-color" content="#0E6B6B">
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="logo-192.png">
+<link rel="stylesheet" href="site.css?v=a271f36cb5">
+<script>try{var t=localStorage.getItem('site.theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to the page</a>
+<div class="aurora" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="./" aria-label="StudyBridge home"><img src="logo-192.png" alt="" width="32" height="32"><span>StudyBridge</span></a>
+    <nav class="links" aria-label="Main"><a href="students.html" aria-current="page">Students</a><a href="tutors.html">Tutors</a><a href="parents.html">Parents</a><a href="schools.html">Schools</a><a href="features.html">Features</a><a href="pricing.html">Pricing</a><a href="subjects.html">Subjects</a></nav>
+    <div class="actions">
+      <button class="icon-btn theme-btn" id="theme" type="button" data-theme-toggle aria-label="Switch light or dark"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
+      <a class="btn ghost hide-sm" href="app/#start=signin">Sign in</a>
+      <a class="btn primary" href="students.html#countdown">Get my plan</a>
+      <button class="icon-btn menu-btn" id="menu" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mobile-nav"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Main" hidden><a href="./">Home</a><a href="students.html" aria-current="page">Students</a><a href="tutors.html">Tutors</a><a href="parents.html">Parents</a><a href="schools.html">Schools</a><a href="features.html">Features</a><a href="pricing.html">Pricing</a><a href="subjects.html">Subjects</a><a href="download.html">Get the app</a><a href="app/#start=signin">Sign in</a><button type="button" class="nav-theme" data-theme-toggle>Switch light or dark</button></nav>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap narrow center">
+      <span class="pill">For students · early access</span>
+      <h1>Get exam-ready,<br><em>step by step.</em></h1>
+      <p class="lead">A plan for the weeks you have, lessons that make sense, practice papers in the real format and timed mocks with a grade. On your own, or with your tutor.</p>
+      <div class="cta center">
+        <a class="btn primary big" href="#countdown">Get my plan</a>
+        <a class="btn big" href="#early">Join early access</a>
+      </div>
+      <p class="fine">Already have a tutor on StudyBridge? <a href="app/#start=invite">Join with your tutor’s code</a> or <a href="app/#start=signin">sign in</a>.</p>
+    </div>
+  </section>
+
+    <section class="countdown" id="countdown">
+    <div class="wrap narrow">
+      <h2 class="reveal">How long until your exams?</h2>
+      <p class="sub reveal">Pick your exam and see how your weeks could be shaped. Free, no sign-up.</p>
+      <div class="cd-card reveal">
+        <div class="cd-controls">
+          <div class="seg" role="group" aria-label="Exam board" id="cd-board"><button type="button" data-board="cambridge" aria-pressed="true">Cambridge</button><button type="button" data-board="edexcel" aria-pressed="false">Pearson Edexcel</button><button type="button" data-board="ib" aria-pressed="false">IB Diploma</button></div>
+          <label class="cd-session">Exam session
+            <select id="cd-session"></select>
+          </label>
+          <label class="cd-date" id="cd-date-wrap" hidden>Your exam date
+            <input type="date" id="cd-date">
+          </label>
+        </div>
+        <div class="cd-result" aria-live="polite">
+          <div class="cd-weeks"><b id="cd-n">–</b><span id="cd-unit">weeks to go</span></div>
+          <div class="cd-when" id="cd-when"></div>
+          <div class="cd-bar" id="cd-bar"></div>
+          <ul class="cd-legend" id="cd-legend"></ul>
+          <p class="cd-tip" id="cd-tip"></p>
+        </div>
+        <div class="cd-foot">
+          <span class="fine">Session dates are approximate. Check your own exam timetable.</span>
+          <a class="btn primary" href="#early" id="cd-save">Save my plan: get early access</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="students" id="how">
+    <div class="wrap">
+      <h2 class="reveal">Everything you need, in the right order</h2>
+      <ol class="steps reveal">
+        <li><span class="n">1</span><h3>Tell us what you study</h3><p>Your exam board, subjects and exam date. If we have your syllabus, you’ll see it. If not, upload it or ask for it.</p></li>
+        <li><span class="n">2</span><h3>A quick check</h3><p>Ten minutes to see what you already know, so your time goes where it matters. You can skip it.</p></li>
+        <li><span class="n">3</span><h3>Your plan</h3><p>Every topic spread over the weeks you have, weak ones first, with time for papers and a mock. Miss a day and it re-plans itself.</p></li>
+        <li><span class="n">4</span><h3>Learn, practise, mock</h3><p>Short lessons, instant marking, practice papers and timed mocks with a grade, so you know exactly where you stand.</p></li>
+      </ol>
+      <div class="inside reveal">
+        <article><span class="ic" aria-hidden="true">✦</span><h3>Lessons that make sense</h3><p>Short and focused, one idea at a time, with a worked example. Tap “say it more simply” or “explain it another way” any time.</p></article>
+        <article><span class="ic" aria-hidden="true">✎</span><h3>Practice papers, real format</h3><p>Original papers built to match each real paper: same sections, timing, marks and style, with full mark schemes.</p></article>
+        <article><span class="ic" aria-hidden="true">⌘</span><h3>Official past papers</h3><p>Find any past paper and open it from the exam board’s own site, then practise it timed and marked.</p></article>
+        <article><span class="ic" aria-hidden="true">◷</span><h3>Timed mocks with a grade</h3><p>Exam conditions, a grade at the end, and how many marks you are from the next one.</p></article>
+        <article><span class="ic" aria-hidden="true">❏</span><h3>Flashcards that come back</h3><p>Cards for every topic, plus your own mistakes, brought back just before you’d forget them.</p></article>
+        <article><span class="ic" aria-hidden="true">∑</span><h3>Maths checked line by line</h3><p>Show your working and see which line went wrong, not just the final answer.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="prof" id="help">
+    <div class="wrap prof-grid">
+      <div class="reveal">
+        <span class="eyebrow">When you’re stuck</span>
+        <h2 class="left">Hints first.<br>The thinking stays yours.</h2>
+        <ul class="ticks">
+          <li><b>Hints before answers.</b> Every question has hints you open one at a time, then a worked solution, so you get there yourself.</li>
+          <li><b>No AI chat.</b> Students never chat with AI. Lessons, hints and solutions are written ahead of time.</li>
+          <li><b>Checked before you see it.</b> Everything is checked before it reaches you, and anything can be reported in one tap.</li>
+          <li><b>With a tutor, the tutor decides.</b> Your tutor approves everything before you see it.</li>
+        </ul>
+      </div>
+      <div class="hints reveal" aria-label="Example of hints and a worked solution">
+        <div class="h-q"><span class="qn">Q4</span> Solve 3x − 7 = 11</div>
+        <div class="h-step"><b>Hint 1</b>What could you do to both sides to get 3x on its own?</div>
+        <div class="h-step"><b>Hint 2</b>Adding 7 gives 3x = 18. What’s the last step?</div>
+        <div class="h-step done"><b>Worked solution</b>3x − 7 = 11, so 3x = 18, so x = 6</div>
+        <div class="h-note">Open one at a time, only when you need it.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="subjects" id="subjects">
+    <div class="wrap">
+      <h2 class="reveal">Your subjects</h2>
+      <p class="sub reveal">87 subjects across Cambridge, Pearson Edexcel and the IB Diploma to start, with more on request.</p>
+      <div class="tabs reveal" role="tablist" aria-label="Exam boards"><button role="tab" id="tab-cambridge" aria-selected="true" aria-controls="panel-cambridge">Cambridge</button><button role="tab" id="tab-edexcel" aria-selected="false" aria-controls="panel-edexcel" tabindex="-1">Pearson Edexcel</button><button role="tab" id="tab-ib" aria-selected="false" aria-controls="panel-ib" tabindex="-1">IB Diploma</button></div>
+      <div class="board-panel" role="tabpanel" id="panel-cambridge" aria-labelledby="tab-cambridge"><div class="level"><h3>Cambridge IGCSE</h3><ul class="chips"><li>Mathematics<small>0580</small></li><li>International Mathematics<small>0607</small></li><li>Additional Mathematics<small>0606</small></li><li>English First Language<small>0500</small></li><li>English as a Second Language<small>0510</small></li><li>English Literature<small>0475</small></li><li>Biology<small>0610</small></li><li>Chemistry<small>0620</small></li><li>Physics<small>0625</small></li><li>Co-ordinated Sciences<small>0654</small></li><li>Computer Science<small>0478</small></li><li>ICT<small>0417</small></li><li>Business Studies<small>0450</small></li><li>Economics<small>0455</small></li><li>Accounting<small>0452</small></li><li>Geography<small>0460</small></li><li>History<small>0470</small></li><li>Global Perspectives<small>0457</small></li><li>Environmental Management<small>0680</small></li><li>French<small>0520</small></li><li>Spanish<small>0530</small></li><li>Hindi as a Second Language<small>0549</small></li></ul></div><div class="level"><h3>Cambridge International AS &amp; A Level</h3><ul class="chips"><li>Mathematics<small>9709</small></li><li>Further Mathematics<small>9231</small></li><li>Physics<small>9702</small></li><li>Chemistry<small>9701</small></li><li>Biology<small>9700</small></li><li>Computer Science<small>9618</small></li><li>Economics<small>9708</small></li><li>Business<small>9609</small></li><li>Accounting<small>9706</small></li><li>Psychology<small>9990</small></li><li>English Language<small>9093</small></li><li>English Literature<small>9695</small></li><li>Sociology<small>9699</small></li><li>Geography<small>9696</small></li><li>History<small>9489</small></li></ul></div></div>
+      <div class="board-panel" role="tabpanel" id="panel-edexcel" aria-labelledby="tab-edexcel" hidden><div class="level"><h3>Pearson Edexcel International GCSE</h3><ul class="chips"><li>Mathematics A</li><li>Further Pure Mathematics</li><li>English Language A</li><li>English as a Second Language</li><li>English Literature</li><li>Biology</li><li>Chemistry</li><li>Physics</li><li>Science (Double Award)</li><li>Computer Science</li><li>ICT</li><li>Business</li><li>Economics</li><li>Accounting</li><li>Geography</li><li>History</li><li>French</li><li>Spanish</li></ul></div><div class="level"><h3>Pearson Edexcel International A Level</h3><ul class="chips"><li>Mathematics</li><li>Further Mathematics</li><li>Physics</li><li>Chemistry</li><li>Biology</li><li>Information Technology</li><li>Economics</li><li>Business</li><li>Accounting</li><li>Psychology</li><li>English Language</li><li>English Literature</li><li>Geography</li><li>History</li></ul></div></div>
+      <div class="board-panel" role="tabpanel" id="panel-ib" aria-labelledby="tab-ib" hidden><div class="level"><h3>IB Diploma subjects, SL and HL</h3><ul class="chips"><li>Mathematics: Analysis and Approaches</li><li>Mathematics: Applications and Interpretation</li><li>Physics</li><li>Chemistry</li><li>Biology</li><li>Computer Science</li><li>Economics</li><li>Business Management</li><li>Psychology</li><li>History</li><li>Geography</li><li>English A: Language and Literature</li><li>English A: Literature</li><li>French B</li><li>Spanish B</li><li>Environmental Systems and Societies</li></ul></div><div class="level"><h3>IB Diploma core</h3><ul class="chips"><li>Theory of Knowledge</li><li>Extended Essay</li></ul></div></div>
+      <p class="center reveal"><a class="btn" href="subjects.html">See every subject, or ask for yours</a></p>
+    </div>
+  </section>
+
+  <section class="access" id="access">
+    <div class="wrap">
+      <h2 class="reveal">Learning that fits you</h2>
+      <p class="sub reveal">Not the other way round.</p>
+      <ul class="access-grid reveal">
+        <li><b>Read aloud</b><span>Hear any lesson or question.</span></li>
+        <li><b>Answer by voice</b><span>Say it instead of typing.</span></li>
+        <li><b>Say it more simply</b><span>Plainer words, same idea.</span></li>
+        <li><b>Focus mode</b><span>One idea on screen at a time.</span></li>
+        <li><b>Reading mode</b><span>Large, calm text and nothing else.</span></li>
+        <li><b>Screen readers</b><span>Works with a keyboard and screen reader throughout.</span></li>
+        <li><b>Colour-blind safe</b><span>Charts that never rely on colour alone.</span></li>
+        <li><b>Extra time</b><span>For timed tests, if you need it.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="devices-short">
+    <div class="wrap">
+      <div class="split reveal">
+        <div>
+          <h2 class="left">Study anywhere. Mock in exam conditions.</h2>
+          <p class="muted">Everything works in any browser, on a laptop, tablet or phone. Mocks run full screen with a timer, like the real exam. The free desktop app for Windows and Mac adds locked-down exams when your tutor sets one. One account works everywhere.</p>
+        </div>
+        <a class="btn big" href="download.html">Get the app</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="band-wrap">
+    <div class="wrap">
+      <a class="band reveal" href="pricing.html#students">
+        <div>
+          <span class="eyebrow left">Pricing</span>
+          <h2 class="left">Every subject, <span data-usd="11">$11</span> a month</h2>
+          <p>Or an exam pass at <span data-usd="9">$9</span> a month, paid once, until your exams. 7 days free.</p>
+        </div>
+        <span class="btn primary big">See student pricing</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="wrap narrow">
+      <h2 class="reveal">Questions from students</h2>
+      <details class="reveal"><summary>Can I use StudyBridge without a tutor?</summary><p>Yes. Sign up as a student and you get a plan to your exam, lessons, practice papers and mocks, with hints and worked solutions. Your first 7 days are free.</p></details>
+      <details class="reveal"><summary>Is there an AI chatbot?</summary><p>No. Students never chat with AI. Lessons, hints and worked solutions are written ahead of time and checked before you see them, so the thinking is always yours.</p></details>
+      <details class="reveal"><summary>Are the practice papers real past papers?</summary><p>No. They are original papers written to match each real paper’s format: sections, timing, marks and style. Real past papers open from the exam board’s own website. StudyBridge is not affiliated with or endorsed by Cambridge, Pearson Edexcel or the IB.</p></details>
+      <details class="reveal"><summary>My subject or exam isn’t listed.</summary><p>Ask for it on the <a href="subjects.html">subjects page</a>. The most-requested come next. You’ll also be able to upload your own syllabus or course outline, from grade 7 to university, and get a plan from it.</p></details>
+      <details class="reveal"><summary>How old do I need to be?</summary><p>From grade 8 you can start on your own. Below grade 8, a parent sets up or approves the account. In some countries the law asks a parent to confirm for anyone under 18, and the app handles that for you.</p></details>
+      <details class="reveal"><summary>How much does it cost?</summary><p>$11 a month, or an exam pass at $9 a month paid once, lasting until your exams. Every subject at your level is included, and you can try it free for 7 days. <a href="pricing.html#students">See student pricing</a>.</p></details>
+    </div>
+  </section>
+
+    <section class="early" id="early">
+    <div class="wrap narrow">
+      <div class="early-box reveal">
+        <h2>Be first in</h2>
+        <p>Tell us who you are and what you need. We’ll save your place and make sure your subjects are ready for you.</p>
+        <form id="ea-form" novalidate data-default-role="student">
+          <div class="ea-grid">
+            <label class="span2">Email<input type="email" name="email" required autocomplete="email" placeholder="you@example.com"></label>
+            <label>I am
+              <select name="role">
+                <option value="student">A student</option>
+                <option value="parent">A parent</option>
+                <option value="tutor">A tutor</option>
+                <option value="centre">A tuition centre</option>
+                <option value="school">A school</option>
+              </select>
+            </label>
+            <label>Curriculum
+              <select name="curriculum">
+                <option value="">Choose…</option>
+                <option>Cambridge IGCSE</option><option>Cambridge AS & A Level</option>
+                <option>Edexcel International GCSE</option><option>Edexcel International A Level</option>
+                <option>IB Diploma</option><option>Several</option><option>University</option><option>Other</option>
+              </select>
+            </label>
+            <label class="span2">Subjects<input name="subjects" placeholder="e.g. Physics, Maths, Economics" maxlength="400"></label>
+            <label>Exam session<input name="exam" id="ea-exam" placeholder="e.g. May/June 2027" maxlength="80"></label>
+            <label>Country<input name="country" placeholder="e.g. Zambia" maxlength="80" autocomplete="country-name"></label>
+            <label class="span2"><span>Anything else? <small>(optional)</small></span><input name="note" id="ea-note" placeholder="A subject we don’t have yet, how many learners, or what you need most" maxlength="600"></label>
+          </div>
+          <label class="check"><input type="checkbox" name="age" required> I’m 13 or older, or I’m a parent signing up for my child.</label>
+          <button class="btn primary big" type="submit">Save my place</button>
+          <p class="fine">We’ll only email you about early access. See the <a href="privacy.html">privacy policy</a>.</p>
+          <p class="ea-msg" id="ea-msg" role="status"></p>
+        </form>
+        <div class="ea-off" id="ea-off" hidden>This form isn’t working right now: email us at <a href="mailto:hello@gostudybridge.com">hello@gostudybridge.com</a>. Tutors can <a href="app/#start=tutor">try it free for 7 days</a>.</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand"><a class="brand" href="./"><img src="logo-192.png" alt="" width="28" height="28"><span>StudyBridge</span></a><p class="fine">Get exam-ready, step by step. With a tutor, or on your own.</p></div>
+      <nav aria-label="For students"><b>Students</b><a href="students.html">How it works</a><a href="students.html#countdown">Exam countdown</a><a href="subjects.html">Subjects</a><a href="students.html#early">Early access</a></nav>
+      <nav aria-label="For tutors"><b>Tutors</b><a href="tutors.html">For tutors</a><a href="features.html#prof">Meet Prof</a><a href="app/#start=tutor">Free trial</a><a href="app/#start=signin">Sign in</a></nav>
+      <nav aria-label="For families and schools"><b>Families</b><a href="parents.html">Parents</a><a href="schools.html">Schools and centres</a><a href="download.html">Get the app</a></nav>
+      <nav aria-label="About"><b>StudyBridge</b><a href="./">Home</a><a href="features.html">Features</a><a href="pricing.html">Pricing</a><a href="contact.html">Contact</a><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a></nav>
+    </div>
+    <p class="legal-line">© 2026 StudyBridge. Cambridge, Pearson Edexcel and IB are trademarks of their owners. StudyBridge is not affiliated with or endorsed by them, and its practice papers are original.</p>
+  </div>
+</footer>
+<script src="config.js?v=1.1.71"></script>
+<script src="site.js?v=fe0360f6f3"></script>
+</body>
+</html>
